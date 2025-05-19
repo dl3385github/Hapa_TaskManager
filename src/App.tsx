@@ -8,6 +8,7 @@ import CreateTaskPage from '@/pages/CreateTaskPage'
 import ConsulPage from '@/pages/ConsulPage'
 import PendingInvitationsPage from '@/pages/PendingInvitationsPage'
 import CompletedTasksPage from '@/pages/CompletedTasksPage'
+import CalendarViewPage from '@/pages/CalendarViewPage'
 import NotFoundPage from '@/pages/NotFoundPage'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/consuls/:id" element={<ConsulPage />} />
         <Route path="/pending" element={<PendingInvitationsPage />} />
         <Route path="/completed" element={<CompletedTasksPage />} />
+        <Route path="/calendar" element={<CalendarViewPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Layout>

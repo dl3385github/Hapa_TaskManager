@@ -6,7 +6,8 @@ import {
   FiPlus, 
   FiUsers, 
   FiClock, 
-  FiStar 
+  FiStar,
+  FiCalendar
 } from 'react-icons/fi'
 
 const Sidebar = () => {
@@ -19,6 +20,7 @@ const Sidebar = () => {
           <NavItem to="/tasks/create" icon={<FiPlus />} label="Create Task (Sim)" />
           <NavItem to="/pending" icon={<FiClock />} label="Pending Invitations" />
           <NavItem to="/completed" icon={<FiStar />} label="Completed Tasks" />
+          <NavItem to="/calendar" icon={<FiCalendar />} label="Calendar View" />
         </nav>
         
         <div className="mt-8">
